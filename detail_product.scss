@@ -44,7 +44,10 @@ table {
 
 
 /* Header */
-header{  
+header{ 
+    top: 0%;
+    position: fixed; 
+    z-index: 2;
     background-image: url(/img/rm373batch2-04.jpg);
     width: 100%;
     .header1{
@@ -57,6 +60,30 @@ header{
             justify-content: center;
 
         }
+        .pencarian{
+            margin: auto;
+            padding: 10px;
+            width: 20%;
+            .input1{
+                border-radius: 20px;
+                width: 70%;
+            }
+            button{
+                width: 20%;
+                border-radius: 10px;
+                .input2{
+                    display: none;
+                }
+                img{
+                    width: 10px;
+                }
+            }
+            button:hover{
+                background-color: #06283D;
+                cursor: pointer;
+            }
+        }
+
         nav{
             width: 60%;
             padding: 2px;
@@ -86,6 +113,7 @@ header{
         }
     }
     .header2{
+        box-shadow: 0px 0px 5px white;
         nav{
             width: 100%;
             ul{
@@ -114,47 +142,108 @@ header{
 
 main{
     .banner{
-        background-image: url(/img/banner-f30.jpg);
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 100%;
-        border: 1px solid gold;
-        height: auto;
-        h1{
-            font-size: 26px;
-            color: white;
-            border: 1px solid;
-        }
-        .namaproduk{
-            margin-bottom: auto;
-            display: list-item;
-            text-align: right;
-            h1{
-                margin-top: 18%;
-                border: 1px solid;
-                font-size: 76px;
+        margin-top: 90px;
+        figure{
+            position: relative;
+            .windows{
+                width: 100%;
             }
-            h2{
-                border: 1px solid;
+            .hp{
+                display: none;
+            }
+            .logo{
+                font-size: 45px;
+                position: absolute;
                 color: white;
-                font-size: 52px;
-                margin-top: -4%;
+                top: 2%;
+               
             }
-            article{
-                p{
-                    border: 1px solid white;
-                    color: white;
+            .produk{
+                z-index: 1;
+                position: absolute;
+                bottom: 10%;
+                right: 1%;
+                h1{
                     text-align: right;
-                    margin-left: 40%;
+                    font-size: 72px;  
+                    color: white;
+                }
+                h2{
+                    text-align: right;
+                    font-size: 42px;
+                    color: white; 
+                    margin-top: -70px;
+                }
+                article{
+                    p{
+                        text-align: right;
+                        margin-top: -30px;
+                        font-size: 14px;
+                        padding: 10px;
+                        margin-left: 60%;
+                        color: white;
+                    }
                 }
             }
+        }
+    }
 
+    // Informasi Produk
+    .informasiproduk{
+        position: relative;
+        bottom: 125px; 
+        display: flex;
+        .kiri{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            .deskripsi{
+                height: 70%;
+                width: 100%;
+                margin: 10%;
+                margin-top: 50%;
+                h1{
+                    font-size: 72px;
+                }
+                h6{
+                    font-size: 24px;
+                    margin-top: -13%;
+                }
+                article{
+                    p{
+                        text-align: center;
+                        font-size: 18px;
+                        margin-top: -7%;
+                        width: 90%;
+                        padding: 20px;
+                    }
+                }
+                button{
+                    margin: auto;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    display: block;
+                    font-size: 24px;
+                }
+                
+            }
+        }
+        .kanan{
+            width: 60%;
+            display: flex;
+            justify-content: end;
+            img{
+                width: 100%;
+            }
         }
     }
 }
 
 
-@media screen and (max-width:720px) {
+// Add Media Screen
+
+@media screen and (max-width:800px) {
     header{
         position: fixed;
         .header1{
@@ -190,29 +279,85 @@ main{
                     }
                 }
             }
+            .pencarian{
+                margin: auto;
+                padding: 10px;
+                width: 20%;
+                text-align: center;
+                .input1{
+                    display: none;
+                }
+                button{
+                    width: 50%;
+                    border-radius: 10px;
+                }
+                button:hover{
+                    background-color: #06283D;
+                    cursor: pointer;
+                    .input2{
+                        display: block;
+                        position: absolute;
+                        top: 40px;
+                        height: 30px;
+                        border-radius: 10px;
+                        border: 3px solid #06283D;
+                        background-color: white;
+                        left: 95px;
+                    }
+                }
+            }
         }
         .header2{
             display: none;
         }
     }
 
+    // Banner
     main{
         .banner{
-            h1{
-                text-align: center;
-            }
-        }
-        .namaproduk{
-            h2{
-                text-align: center;
-            }
-            article{
-                p{
-                    text-align: center;
+            margin: auto;
+            figure{
+                .windows{
+                    display: none;
+                }
+                .hp{
+                    display: block;
+                    width: 100%;
+                }
+                .logo{
+                    display: none;
+                   
+                }
+                .produk{
+                    width: 70%;
+                    bottom: 10%;
+                    right: 0%;
+                    left: 0%;
+                    border-radius: 20px;
+                    background-color:rgba($color: white, $alpha: 0.5);
                     margin: auto;
+                    box-shadow: 0px 0px 2px grey;
+                    h1{
+                        color: #06283D;
+                        margin: auto;
+                        text-align: center;
+                    }
+                    h2{
+                       color: #06283D;
+                       margin: auto;
+                       text-align: center;
+                    }
+                    article{
+                        p{
+                            padding: 10px;
+                            margin: auto;
+                            width: 60%;
+                            text-align: center;
+                            color: #06283D;
+                        }
+                    }
                 }
             }
         }
     }
-    
 }

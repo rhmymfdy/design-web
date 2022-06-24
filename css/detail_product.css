@@ -50,6 +50,9 @@ table {
 
 /* Header */
 header {
+  top: 0%;
+  position: fixed;
+  z-index: 2;
   background-image: url(/img/rm373batch2-04.jpg);
   width: 100%;
 }
@@ -70,6 +73,35 @@ header .header1 .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header .header1 .pencarian {
+  margin: auto;
+  padding: 10px;
+  width: 20%;
+}
+
+header .header1 .pencarian .input1 {
+  border-radius: 20px;
+  width: 70%;
+}
+
+header .header1 .pencarian button {
+  width: 20%;
+  border-radius: 10px;
+}
+
+header .header1 .pencarian button .input2 {
+  display: none;
+}
+
+header .header1 .pencarian button img {
+  width: 10px;
+}
+
+header .header1 .pencarian button:hover {
+  background-color: #06283D;
+  cursor: pointer;
 }
 
 header .header1 nav {
@@ -112,6 +144,11 @@ header .header1 nav ul li a {
   text-decoration: none;
 }
 
+header .header2 {
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+}
+
 header .header2 nav {
   width: 100%;
 }
@@ -145,47 +182,123 @@ header .header2 nav ul li a {
 }
 
 main .banner {
-  background-image: url(/img/banner-f30.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 100%;
-  border: 1px solid gold;
-  height: auto;
+  margin-top: 90px;
 }
 
-main .banner h1 {
-  font-size: 26px;
+main .banner figure {
+  position: relative;
+}
+
+main .banner figure .windows {
+  width: 100%;
+}
+
+main .banner figure .hp {
+  display: none;
+}
+
+main .banner figure .logo {
+  font-size: 45px;
+  position: absolute;
   color: white;
-  border: 1px solid;
+  top: 2%;
 }
 
-main .banner .namaproduk {
-  margin-bottom: auto;
-  display: list-item;
+main .banner figure .produk {
+  z-index: 1;
+  position: absolute;
+  bottom: 10%;
+  right: 1%;
+}
+
+main .banner figure .produk h1 {
   text-align: right;
-}
-
-main .banner .namaproduk h1 {
-  margin-top: 18%;
-  border: 1px solid;
-  font-size: 76px;
-}
-
-main .banner .namaproduk h2 {
-  border: 1px solid;
+  font-size: 72px;
   color: white;
-  font-size: 52px;
-  margin-top: -4%;
 }
 
-main .banner .namaproduk article p {
-  border: 1px solid white;
-  color: white;
+main .banner figure .produk h2 {
   text-align: right;
-  margin-left: 40%;
+  font-size: 42px;
+  color: white;
+  margin-top: -70px;
 }
 
-@media screen and (max-width: 720px) {
+main .banner figure .produk article p {
+  text-align: right;
+  margin-top: -30px;
+  font-size: 14px;
+  padding: 10px;
+  margin-left: 60%;
+  color: white;
+}
+
+main .informasiproduk {
+  position: relative;
+  bottom: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .informasiproduk .kiri {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .informasiproduk .kiri .deskripsi {
+  height: 70%;
+  width: 100%;
+  margin: 10%;
+  margin-top: 50%;
+}
+
+main .informasiproduk .kiri .deskripsi h1 {
+  font-size: 72px;
+}
+
+main .informasiproduk .kiri .deskripsi h6 {
+  font-size: 24px;
+  margin-top: -13%;
+}
+
+main .informasiproduk .kiri .deskripsi article p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: -7%;
+  width: 90%;
+  padding: 20px;
+}
+
+main .informasiproduk .kiri .deskripsi button {
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  font-size: 24px;
+}
+
+main .informasiproduk .kanan {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+main .informasiproduk .kanan img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
   header {
     position: fixed;
   }
@@ -226,18 +339,76 @@ main .banner .namaproduk article p {
     padding: 10px;
     width: 120px;
   }
+  header .header1 .pencarian {
+    margin: auto;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+  }
+  header .header1 .pencarian .input1 {
+    display: none;
+  }
+  header .header1 .pencarian button {
+    width: 50%;
+    border-radius: 10px;
+  }
+  header .header1 .pencarian button:hover {
+    background-color: #06283D;
+    cursor: pointer;
+  }
+  header .header1 .pencarian button:hover .input2 {
+    display: block;
+    position: absolute;
+    top: 40px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid #06283D;
+    background-color: white;
+    left: 95px;
+  }
   header .header2 {
     display: none;
   }
-  main .banner h1 {
-    text-align: center;
-  }
-  main .namaproduk h2 {
-    text-align: center;
-  }
-  main .namaproduk article p {
-    text-align: center;
+  main .banner {
     margin: auto;
+  }
+  main .banner figure .windows {
+    display: none;
+  }
+  main .banner figure .hp {
+    display: block;
+    width: 100%;
+  }
+  main .banner figure .logo {
+    display: none;
+  }
+  main .banner figure .produk {
+    width: 70%;
+    bottom: 10%;
+    right: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 2px grey;
+            box-shadow: 0px 0px 2px grey;
+  }
+  main .banner figure .produk h1 {
+    color: #06283D;
+    margin: auto;
+    text-align: center;
+  }
+  main .banner figure .produk h2 {
+    color: #06283D;
+    margin: auto;
+    text-align: center;
+  }
+  main .banner figure .produk article p {
+    padding: 10px;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    color: #06283D;
   }
 }
 /*# sourceMappingURL=detail_product.css.map */
