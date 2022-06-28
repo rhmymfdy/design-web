@@ -1,0 +1,318 @@
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  top: 0%;
+  position: fixed;
+  z-index: 2;
+  background-image: url(/img/bg-about.jpg);
+  width: 100%;
+}
+
+header .header1 {
+  color: white;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header1 .logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header1 .pencarian {
+  margin: auto;
+  padding: 10px;
+  width: 20%;
+}
+
+header .header1 .pencarian .input1 {
+  border-radius: 20px;
+  width: 70%;
+}
+
+header .header1 .pencarian button {
+  width: 20%;
+  border-radius: 10px;
+}
+
+header .header1 .pencarian button .input2 {
+  display: none;
+}
+
+header .header1 .pencarian button img {
+  width: 10px;
+}
+
+header .header1 .pencarian button:hover {
+  background-color: #06283D;
+  cursor: pointer;
+}
+
+header .header1 nav {
+  width: 60%;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header1 nav ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+header .header1 nav ul li:nth-of-type(3) .submenu {
+  display: none;
+}
+
+header .header1 nav ul li:hover {
+  background-color: #06283D;
+  border-radius: 10px;
+}
+
+header .header1 nav ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+header .header1 nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+header .header2 {
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+}
+
+header .header2 nav {
+  width: 100%;
+}
+
+header .header2 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .header2 nav ul li:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+
+header .header2 nav ul li:hover a {
+  color: #06283D;
+}
+
+header .header2 nav ul li {
+  padding: 5px;
+  list-style: none;
+}
+
+header .header2 nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+main .banner {
+  background-image: url(/img/bg-about.jpg);
+  height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .banner .subbanner {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 70%;
+  margin: auto;
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .banner .subbanner h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #06283D;
+  font-size: 72px;
+  margin: 0%;
+  text-decoration: underline;
+}
+
+main .banner .subbanner h2 {
+  font-size: 42px;
+  margin: 1%;
+  font-family: 'Poppins', sans-serif;
+  color: #06283D;
+}
+
+main .banner .subbanner article p {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px 50px;
+  margin: auto;
+  width: 50%;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+main .our-service {
+  margin-top: 2%;
+  padding: 20px;
+}
+
+main .our-service .judul {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+}
+
+main .our-service h6 {
+  margin: 0%;
+  font-size: 18px;
+  text-align: center;
+}
+
+main .our-service .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .our-service .service .produk {
+  cursor: pointer;
+  width: 20%;
+  display: block;
+  margin: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .our-service .service .produk img {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 60%;
+}
+
+main .our-service .service .produk img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: rgba(6, 40, 61, 0.2);
+  border-radius: 10px;
+}
+
+main .our-service .service .produk h1 {
+  text-align: center;
+  margin: 0%;
+}
+
+main .our-service .service .produk h1 a {
+  padding: 10px;
+  position: relative;
+  font-family: 'Darker Grotesque', sans-serif;
+  text-decoration: none;
+}
+
+main .our-service .service .produk h1 a:hover {
+  background-color: rgba(6, 40, 61, 0.2);
+}
+/*# sourceMappingURL=about.css.map */

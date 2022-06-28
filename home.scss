@@ -42,9 +42,10 @@ table {
 	border-spacing: 0;
 }
 
-header{
-    position: fixed;
-
+header{ 
+    top: 0%;
+    position: fixed; 
+    z-index: 2;
     background-image: url(/img/rm373batch2-04.jpg);
     width: 100%;
     .header1{
@@ -53,6 +54,8 @@ header{
         display: flex;
         justify-content: space-between;
         .logo{
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
             color: white;
             justify-content: center;
 
@@ -102,6 +105,7 @@ header{
                     padding: 10px;
                     list-style: none;
                     a{
+                        font-family: 'Poppins', sans-serif;
                         color: white;
                         text-decoration: none;
                     }
@@ -110,30 +114,26 @@ header{
         }
     }
     .header2{
-        background-color:white;
-        box-shadow: 0px 0px 10px white;
-        padding: 2px;
-        display: flex;
-        justify-content: space-between;
+        box-shadow: 0px 0px 5px white;
         nav{
-            padding: 2px;
             width: 100%;
             ul{
                 display: flex; 
                 padding: 2px;
                 justify-content: space-around;
                 li:hover{
-                    background-color: #06283D;
+                    background-color: white;
                     border-radius: 10px;
                     a{
-                        color: white;
+                        color: #06283D;
                     }
                 }
                 li{
                     padding: 5px;
                     list-style: none;
                     a{
-                        color:#06283D;
+                        font-family: 'Poppins', sans-serif;
+                        color:white;
                         text-decoration: none;
                     }
                 }
@@ -166,11 +166,13 @@ main{
                 margin-top: 200px;
             }
             h1{
+                font-family: 'Poppins', sans-serif;
                 text-align: center;
                 font-size: 42px;
                 margin: 0%;
             }
             p{
+                font-family: 'Darker Grotesque', sans-serif;
                 margin: auto;
                 width: 80%;
                 text-align: center;
@@ -194,12 +196,14 @@ main{
                 width: 100%;
                 background-color: #06283D;
                 h1{
+                    font-family: 'Poppins', sans-serif;
                     color: white;
                     margin: 0%;
                     text-align: center;
                     font-size: 82px;
                 }
                 h4{
+                    font-family: 'Poppins', sans-serif;
                     color: white;
                     margin: 0%;
                     font-size: 18px;
@@ -212,6 +216,7 @@ main{
                 padding: 50px;
                 text-align: center;
                 p{
+                    font-family: 'Darker Grotesque', sans-serif;
                     color: #06283D;
                     margin: auto;
                     width: 100%;
@@ -220,6 +225,7 @@ main{
                     font-size: 24px;
                 }
                 button{
+                    font-family: 'Darker Grotesque', sans-serif;
                     background-color: #06283D;
                     color: whitesmoke;
                     font-weight: bold;
@@ -258,6 +264,7 @@ main{
             height: 365px;
             background-size: cover;
             h1{
+                font-family: 'Poppins', sans-serif;  
                 font-size: 52px;
                 margin-top: 17%;
                 color: white;
@@ -270,12 +277,14 @@ main{
             article{
                 margin: 10px;
                 p{
+                    font-family: 'Darker Grotesque', sans-serif;
                     font-size: 18px;
                 }
             }
             h1{
                 border-radius: 10px;
                 padding: 10px;
+                font-family: 'Poppins', sans-serif;
                 background-color: #06283D;
                 color: whitesmoke;
                 margin: 10px;
@@ -296,6 +305,7 @@ main{
             width: 30%;
             text-align: center;
             h1{
+                font-family: 'Poppins', sans-serif;
                 text-align: left;
                 padding: 20px;
             }
@@ -304,6 +314,7 @@ main{
             }
             article{
                 p{
+                    font-family: 'Darker Grotesque', sans-serif;
                     margin: 20px;
                 }
             }
@@ -316,9 +327,11 @@ main{
             .nametag{
                 padding: 20px;
                 h1{
+                    font-family: 'Poppins', sans-serif;
                     text-align: left;
                 }
                 h4{
+                    font-family: 'Poppins', sans-serif;
                     text-align: left;
                 }
             }
@@ -327,6 +340,7 @@ main{
             }
             article{
                 p{
+                    font-family: 'Darker Grotesque', sans-serif;
                     margin: 20px;
                 }
             }
@@ -339,12 +353,14 @@ main{
             h1{
                 text-align: left;
                 padding: 20px;
+                font-family: 'Poppins', sans-serif;
             }
             img{
                 width: 70%;
             }
             article{
                 p{
+                    font-family: 'Darker Grotesque', sans-serif;
                     margin: 20px;
                 }
             }
@@ -365,6 +381,7 @@ main{
             border-radius: 10px;
             background-color: #06283D;
             a{
+            font-family: 'Darker Grotesque', sans-serif;
             font-size: 18px;
             text-decoration: none;
             color:white;
@@ -386,6 +403,7 @@ main{
             margin: 50px 50px;
             box-shadow: 0px 0px 10px whitesmoke;
             h1{
+                font-family: 'Poppins', sans-serif;
                 margin-top: 2%;
                 font-size: 32px;
                 text-align: center;
@@ -401,9 +419,10 @@ main{
                     tr{
                         padding: 20px;
                         th{
+                            font-family: 'Darker Grotesque', sans-serif;
                             font-size: 24px;
                             padding: 20px;
-                            text-align: center;
+                            text-align: left;
                         }
                     }
                 }
@@ -411,6 +430,7 @@ main{
                     tr{
                         padding: 20px;
                         th{
+                            font-family: 'Darker Grotesque', sans-serif;
                             padding: 20px;
                             text-align: left;
                         }
@@ -421,89 +441,86 @@ main{
         }
     }
 }
-    /* Footer */
-    footer{
-        .footer{
-            .bungkus{
-                height: 200px;
+   /* Footer */
+footer{
+    .footer{
+        .bungkus{
+            padding: 50px;
+            .sosialmedia{
+                display: flex;
+                a{
+                    width: 4%;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .cta{
+            display: flex;
+            background-color: #06283D;
+            padding: 20px;
+            justify-content: space-around;
+            .follow{
+                width: 20%;
                 padding: 10px;
-                .sosialmedia{
-                    margin: 0px 350px;
-                    margin-top: 4%;
-                    display: flex;
-                    a{
-                        width: 4%;
-                        margin: auto;
-                        img{
-                            width: 100%;
+                h4{
+                    color: white;
+                    margin: 10px 12%;
+                }
+                article{
+                    p{
+                        color: white;
+                        padding: 10px;
+                        margin: 0px 10%;
+                    }
+                }
+            }
+            .store{
+                padding: 10px;
+                width: 20%;
+                h4{
+                    padding: 10px;
+                    color: white;
+                    text-align: center;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        padding: 10px;
+                        a{
+                            margin: 5px 65px;
+                            text-align: left;
+                            color: white;
+                            text-decoration: none;
                         }
                     }
                 }
             }
-            .cta{
-                display: flex;
-                background-color: #06283D;
-                padding: 20px;
-                justify-content: space-around;
-                .follow{
-                    width: 20%;
+            .support{
+                width: 20%;
+                h4{
                     padding: 10px;
-                    h4{
-                        color: white;
-                        margin: 10px 12%;
-                    }
-                    article{
-                        p{
+                    color: white;
+                    text-align: center;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        padding: 10px;
+                        a{
+                            margin: 5px 65px;
+                            text-align: left;
                             color: white;
-                            padding: 10px;
-                            margin: 0px 10%;
-                        }
-                    }
-                }
-                .store{
-                    padding: 10px;
-                    width: 20%;
-                    h4{
-                        padding: 10px;
-                        color: white;
-                        text-align: center;
-                    }
-                    ul{
-                        li{
-                            list-style: none;
-                            padding: 10px;
-                            a{
-                                margin: 5px 65px;
-                                text-align: left;
-                                color: white;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-                .support{
-                    width: 20%;
-                    h4{
-                        padding: 10px;
-                        color: white;
-                        text-align: center;
-                    }
-                    ul{
-                        li{
-                            list-style: none;
-                            padding: 10px;
-                            a{
-                                margin: 5px 65px;
-                                text-align: left;
-                                color: white;
-                                text-decoration: none;
-                            }
+                            text-decoration: none;
                         }
                     }
                 }
             }
         }
-    }    
+    }
+}  
 
 
 
@@ -591,11 +608,11 @@ main{
             color:#06283D;
             article{
                 margin: auto;
-                margin-top: 150px;
+                margin-top: 100px;
             }
             h1{
                 text-align: center;
-                font-size: 42px;
+                font-size: 38px;
                 margin: 0%;
                 text-shadow: 5px 3px 5px white;
             }
