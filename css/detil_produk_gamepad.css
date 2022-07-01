@@ -1,0 +1,976 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;900&family=Poppins:wght@700&display=swap");
+header {
+  top: 0%;
+  position: fixed;
+  z-index: 2;
+  background-image: url(/img/rm373batch2-04.jpg);
+  width: 100%;
+}
+
+header .header1 {
+  color: white;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header1 .logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header1 .pencarian {
+  margin: auto;
+  padding: 10px;
+  width: 20%;
+}
+
+header .header1 .pencarian .input1 {
+  border: none;
+  border-radius: 20px;
+  width: 70%;
+}
+
+header .header1 .pencarian button {
+  border: none;
+  width: 20%;
+  border-radius: 10px;
+}
+
+header .header1 .pencarian button .input2 {
+  display: none;
+}
+
+header .header1 .pencarian button img {
+  width: 10px;
+}
+
+header .header1 .pencarian button:hover {
+  background-color: #06283D;
+  cursor: pointer;
+}
+
+header .header1 nav {
+  width: 60%;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header1 nav ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+header .header1 nav ul li:nth-of-type(3) .submenu {
+  display: none;
+}
+
+header .header1 nav ul li:hover {
+  background-color: #06283D;
+  border-radius: 10px;
+}
+
+header .header1 nav ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+header .header1 nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+header .header2 {
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+}
+
+header .header2 nav {
+  width: 100%;
+}
+
+header .header2 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .header2 nav ul li:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+
+header .header2 nav ul li:hover a {
+  color: #06283D;
+}
+
+header .header2 nav ul li {
+  padding: 5px;
+  list-style: none;
+}
+
+header .header2 nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Footer */
+footer .footer .bungkus {
+  padding: 50px;
+}
+
+footer .footer .bungkus .sosialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer .bungkus .sosialmedia a {
+  width: 4%;
+  margin: auto;
+}
+
+footer .footer .bungkus .sosialmedia a img {
+  width: 100%;
+}
+
+footer .footer .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #06283D;
+  padding: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer .cta .follow {
+  width: 20%;
+  padding: 10px;
+}
+
+footer .footer .cta .follow h4 {
+  color: white;
+  margin: 10px 12%;
+}
+
+footer .footer .cta .follow article p {
+  color: white;
+  padding: 10px;
+  margin: 0px 10%;
+}
+
+footer .footer .cta .store {
+  padding: 10px;
+  width: 20%;
+}
+
+footer .footer .cta .store h4 {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+footer .footer .cta .store ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+footer .footer .cta .store ul li a {
+  margin: 5px 65px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer .cta .support {
+  width: 20%;
+}
+
+footer .footer .cta .support h4 {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+footer .footer .cta .support ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+footer .footer .cta .support ul li a {
+  margin: 5px 65px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+main .banner {
+  margin-top: 60px;
+}
+
+main .banner figure {
+  position: relative;
+}
+
+main .banner figure .windows {
+  width: 100%;
+}
+
+main .banner figure .hp {
+  display: none;
+}
+
+main .banner figure .logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  position: absolute;
+  color: white;
+  top: 2%;
+}
+
+main .banner figure .produk {
+  z-index: 1;
+  position: absolute;
+  bottom: 10%;
+  right: 1%;
+}
+
+main .banner figure .produk h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: right;
+  font-size: 72px;
+  color: white;
+}
+
+main .banner figure .produk h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: right;
+  font-size: 42px;
+  color: white;
+  margin-top: -70px;
+}
+
+main .banner figure .produk article p {
+  font-family: 'Darker Grotesque', sans-serif;
+  text-align: right;
+  margin-top: -30px;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 60%;
+  color: white;
+}
+
+main .informasiproduk {
+  position: relative;
+  bottom: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .informasiproduk .kiri {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .informasiproduk .kiri .deskripsi {
+  height: 70%;
+  width: 100%;
+  margin: 10%;
+  margin-top: 10%;
+}
+
+main .informasiproduk .kiri .deskripsi h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 72px;
+}
+
+main .informasiproduk .kiri .deskripsi h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-top: -13%;
+}
+
+main .informasiproduk .kiri .deskripsi article p {
+  font-family: 'Darker Grotesque', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin-top: -7%;
+  width: 90%;
+  padding: 5px;
+}
+
+main .informasiproduk .kiri .deskripsi button {
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  font-size: 24px;
+}
+
+main .informasiproduk .kiri .deskripsi button a {
+  color: #06283D;
+  text-decoration: none;
+}
+
+main .informasiproduk .kanan {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+main .informasiproduk .kanan img {
+  width: 100%;
+}
+
+main .produkvideo {
+  background-image: url(/img/gamepad/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  bottom: 50px;
+  padding: 10px;
+}
+
+main .produkvideo .contentkiri {
+  width: 35%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 10px white;
+          box-shadow: 0px 0px 10px white;
+}
+
+main .produkvideo .contentkiri .video {
+  margin: 10px;
+}
+
+main .produkvideo .contentkiri .video video {
+  margin: auto;
+  width: 100%;
+}
+
+main .produkvideo .contentkanan {
+  width: 64%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .produkvideo .contentkanan .deskripsi {
+  margin-left: 17%;
+  margin-right: 18%;
+}
+
+main .produkvideo .contentkanan .deskripsi h1 {
+  color: black;
+  font-size: 350%;
+  font-family: 'Poppins', sans-serif;
+  margin: 1%;
+}
+
+main .produkvideo .contentkanan .deskripsi h4 {
+  margin: 1%;
+  color: black;
+  font-size: 230%;
+  font-family: 'Poppins', sans-serif;
+}
+
+main .produkvideo .contentkanan .deskripsi article p {
+  color: black;
+  margin: 1%;
+  font-size: 140%;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+main .produkvideo .contentkanan .deskripsi article ul {
+  padding: 10px;
+}
+
+main .produkvideo .contentkanan .deskripsi article ul li {
+  color: black;
+  font-size: 140%;
+  margin: 1%;
+  font-family: 'Darker Grotesque', sans-serif;
+  list-style: disc;
+}
+
+main .menucolors h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0%;
+  font-size: 42px;
+}
+
+main .menucolors h6 {
+  font-size: 18px;
+  margin: 1%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+main .menucolors .pilihan-produk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .menucolors .pilihan-produk .produk-colors {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .menucolors .pilihan-produk .produk-colors img {
+  width: 100%;
+}
+
+main .menucolors .pilihan-produk .produk-colors h1 {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+main .menucolors .pilihan-produk .produk-colors h6 {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+main .menucolors .pilihan-produk .produk-colors a {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 2%;
+}
+
+main .spesifikasi {
+  padding-top: 70px;
+}
+
+main .spesifikasi table {
+  width: 80%;
+  margin: auto;
+}
+
+main .spesifikasi table thead tr th {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  padding: 30px;
+  width: 100%;
+}
+
+main .spesifikasi table tbody {
+  padding: 10px;
+}
+
+main .spesifikasi table tbody tr td {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 16px;
+}
+
+main .spesifikasi table tbody tr:nth-of-type(10) td {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+main .spesifikasi table tbody tr:nth-of-type(11) td {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+main .spesifikasi table tbody tr:nth-of-type(12) td {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+main .spesifikasi table tbody tr:nth-of-type(13) td {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+main .our-service h1 {
+  padding: 50px;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+}
+
+main .our-service .service {
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .our-service .service .produk {
+  width: 20%;
+  display: block;
+}
+
+main .our-service .service .produk img {
+  cursor: pointer;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 60%;
+}
+
+main .our-service .service .produk img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  border-radius: 10px;
+}
+
+main .our-service .service .produk h1 {
+  text-align: center;
+}
+
+main .our-service .service .produk h1 a {
+  padding: 3px 25px;
+  font-size: 24px;
+  font-family: 'Darker Grotesque', sans-serif;
+  text-decoration: none;
+  color: #06283D;
+}
+
+main .our-service .service .produk h1 a:hover {
+  background-color: #06283d;
+  color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: fixed;
+  }
+  header .header1 {
+    background-image: url(/img/rm373batch2-04.jpg);
+  }
+  header .header1 nav ul li {
+    padding: 10px;
+  }
+  header .header1 nav ul li:hover {
+    border-radius: 10px;
+    background-color: #06283D;
+  }
+  header .header1 nav ul li:nth-of-type(3):hover .submenu {
+    border-radius: 10px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    background-image: url(/img/rm373batch2-04.jpg);
+    top: 40px;
+    right: 50px;
+    width: 400px;
+  }
+  header .header1 nav ul li:nth-of-type(3):hover .submenu li:nth-of-type(1) {
+    margin-right: 115px;
+  }
+  header .header1 nav ul li:nth-of-type(3):hover .submenu li {
+    padding: 10px;
+    width: 120px;
+  }
+  header .header1 .pencarian {
+    margin: auto;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+  }
+  header .header1 .pencarian .input1 {
+    display: none;
+  }
+  header .header1 .pencarian button {
+    width: 50%;
+    border-radius: 10px;
+  }
+  header .header1 .pencarian button:hover {
+    background-color: #06283D;
+    cursor: pointer;
+  }
+  header .header1 .pencarian button:hover .input2 {
+    display: block;
+    position: absolute;
+    top: 40px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid #06283D;
+    background-color: white;
+    left: 95px;
+  }
+  header .header2 {
+    display: none;
+  }
+  footer .footer section.bungkus {
+    padding: 10px;
+    height: auto;
+  }
+  footer .footer .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #06283D;
+    padding: 3px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid;
+  }
+  footer .footer .cta .follow {
+    width: 20%;
+    padding: 10px;
+  }
+  footer .footer .cta .follow h4 {
+    color: white;
+  }
+  footer .footer .cta .follow article p {
+    color: white;
+    padding: 10px;
+  }
+  footer .footer .cta .store {
+    padding: 10px;
+    width: 20%;
+  }
+  footer .footer .cta .store h4 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  footer .footer .cta .store ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  footer .footer .cta .store ul li a {
+    margin: auto;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+  }
+  footer .footer .cta section.support {
+    width: 20%;
+  }
+  footer .footer .cta section.support h4 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  footer .footer .cta section.support ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  footer .footer .cta section.support ul li a {
+    text-align: left;
+    color: white;
+    margin: auto;
+    text-decoration: none;
+  }
+  main .banner {
+    margin: auto;
+  }
+  main .banner figure .windows {
+    display: none;
+  }
+  main .banner figure .hp {
+    display: block;
+    width: 100%;
+  }
+  main .banner figure .logo {
+    display: none;
+  }
+  main .banner figure .produk {
+    padding: 10px;
+    width: 70%;
+    bottom: 10%;
+    right: 0%;
+    left: 0%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 2px grey;
+            box-shadow: 0px 0px 2px grey;
+  }
+  main .banner figure .produk h1 {
+    color: #06283D;
+    margin: auto;
+    text-align: center;
+  }
+  main .banner figure .produk h2 {
+    color: #06283D;
+    margin: auto;
+    text-align: center;
+  }
+  main .banner figure .produk article p {
+    padding: 10px;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    color: #06283D;
+  }
+  .informasiproduk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+  }
+  .informasiproduk section.kiri {
+    margin: auto;
+    width: auto;
+  }
+  .informasiproduk section.kiri .deskripsi h1 {
+    font-size: 56px;
+    margin: 1%;
+  }
+  .informasiproduk section.kiri .deskripsi h6 {
+    margin: 1%;
+  }
+  .informasiproduk section.kiri .deskripsi article {
+    margin-bottom: 20px;
+  }
+  .informasiproduk section.kiri .deskripsi article p {
+    margin: auto;
+  }
+  .informasiproduk section.kanan {
+    margin: auto;
+    width: auto;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .informasiproduk section.kanan img:hover {
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    border-radius: 20px;
+    background-color: rgba(6, 40, 61, 0.1);
+    border: none;
+  }
+  .informasiproduk section.kanan img {
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    cursor: pointer;
+    margin: auto;
+    width: 50%;
+  }
+  section.produkvideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 20px;
+  }
+  section.produkvideo .contentkiri {
+    width: 95%;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  section.produkvideo .contentkiri .video {
+    background-color: none;
+    padding: 30px 0px;
+    text-align: center;
+  }
+  section.produkvideo .contentkiri .video video {
+    width: 90%;
+    -webkit-box-shadow: 0px 0px 10px white;
+            box-shadow: 0px 0px 10px white;
+  }
+  section.produkvideo .contentkanan {
+    width: 100%;
+  }
+  section.produkvideo .contentkanan .deskripsi {
+    margin: auto;
+  }
+  section.produkvideo .contentkanan .deskripsi h1 {
+    text-align: center;
+    font-size: 250%;
+  }
+  section.produkvideo .contentkanan .deskripsi h4 {
+    font-size: 150%;
+    text-align: center;
+  }
+  section.produkvideo .contentkanan .deskripsi article p {
+    font-size: 125%;
+    text-align: center;
+  }
+  section.produkvideo .contentkanan .deskripsi article ul {
+    padding: 10px 0px;
+  }
+  section.produkvideo .contentkanan .deskripsi article ul li {
+    font-size: 125%;
+    margin: auto;
+    width: 90%;
+  }
+  .menucolors {
+    width: 100%;
+    margin: auto;
+  }
+  .menucolors .pilihan-produk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menucolors .pilihan-produk section.produk-colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .menucolors .pilihan-produk section.produk-colors img {
+    width: 90%;
+  }
+  .menucolors .pilihan-produk section.produk-colors h1 {
+    margin-top: -19%;
+  }
+  .menucolors .pilihan-produk section.produk-colors a {
+    margin: 2%;
+  }
+}
+/*# sourceMappingURL=detil_produk_gamepad.css.map */

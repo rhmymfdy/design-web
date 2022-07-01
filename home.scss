@@ -1,151 +1,11 @@
-html, body, div, span, applet, object, iframe,
-blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+@import "_header";
+@import "css-reset";
+@import "_footer";
 
-header{ 
-    top: 0%;
-    position: fixed; 
-    z-index: 2;
-    background-image: url(/img/rm373batch2-04.jpg);
-    width: 100%;
-    .header1{
-        color: white;
-        padding: 2px;
-        display: flex;
-        justify-content: space-between;
-        .logo{
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
-            color: white;
-            justify-content: center;
 
-        }
-        .pencarian{
-            margin: auto;
-            padding: 10px;
-            width: 20%;
-            .input1{
-                border-radius: 20px;
-                width: 70%;
-            }
-            button{
-                width: 20%;
-                border-radius: 10px;
-                .input2{
-                    display: none;
-                }
-                img{
-                    width: 10px;
-                }
-            }
-            button:hover{
-                background-color: #06283D;
-                cursor: pointer;
-            }
-        }
-
-        nav{
-            width: 60%;
-            padding: 2px;
-            display: flex;
-            align-items: center;
-            ul{
-                justify-content: space-around;
-                padding: 2px;
-                display: flex;
-                width: 100%;
-                li:nth-of-type(3) .submenu{
-                    display: none;
-                }
-                li:hover{
-                    background-color: #06283D;
-                    border-radius: 10px;
-                }
-                li{
-                    padding: 10px;
-                    list-style: none;
-                    a{
-                        font-family: 'Poppins', sans-serif;
-                        color: white;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
-    .header2{
-        box-shadow: 0px 0px 5px white;
-        nav{
-            width: 100%;
-            ul{
-                display: flex; 
-                padding: 2px;
-                justify-content: space-around;
-                li:hover{
-                    background-color: white;
-                    border-radius: 10px;
-                    a{
-                        color: #06283D;
-                    }
-                }
-                li{
-                    padding: 5px;
-                    list-style: none;
-                    a{
-                        font-family: 'Poppins', sans-serif;
-                        color:white;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
-}
 
 /* main */
-
 main{
-
     /* Landing Page */
     .utama{
         display: flex;
@@ -235,6 +95,10 @@ main{
                     padding: 10px;
                     font-size: 24px;
                     box-shadow: 0px 5px 5px #06283D;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
                 }
             }
         }
@@ -318,6 +182,15 @@ main{
                     margin: 20px;
                 }
             }
+            a{
+                padding: 10px;
+                color: #06283D;
+            }
+            a:hover{
+                background-color: #06283D;
+                border-radius: 20px;
+                color: white;
+            }
         }
         .content2{
             box-shadow: 0px 0px 5px grey;
@@ -327,10 +200,12 @@ main{
             .nametag{
                 padding: 20px;
                 h1{
+                    margin: 0%;
                     font-family: 'Poppins', sans-serif;
                     text-align: left;
                 }
                 h4{
+                    margin: 0%;
                     font-family: 'Poppins', sans-serif;
                     text-align: left;
                 }
@@ -343,6 +218,15 @@ main{
                     font-family: 'Darker Grotesque', sans-serif;
                     margin: 20px;
                 }
+            }
+            a{
+                padding: 10px;
+                color: #06283D;
+            }
+            a:hover{
+                background-color: #06283D;
+                border-radius: 20px;
+                color: white;
             }
         }
         .content3{
@@ -363,6 +247,15 @@ main{
                     font-family: 'Darker Grotesque', sans-serif;
                     margin: 20px;
                 }
+            }
+            a{
+                padding: 10px;
+                color: #06283D;
+            }
+            a:hover{
+                background-color: #06283D;
+                border-radius: 20px;
+                color: white;
             }
         }
     }
@@ -441,475 +334,257 @@ main{
         }
     }
 }
-   /* Footer */
-footer{
-    .footer{
-        .bungkus{
-            padding: 50px;
-            .sosialmedia{
-                display: flex;
-                a{
-                    width: 4%;
-                    margin: auto;
-                    img{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        .cta{
-            display: flex;
-            background-color: #06283D;
-            padding: 20px;
-            justify-content: space-around;
-            .follow{
-                width: 20%;
-                padding: 10px;
-                h4{
-                    color: white;
-                    margin: 10px 12%;
-                }
-                article{
-                    p{
-                        color: white;
-                        padding: 10px;
-                        margin: 0px 10%;
-                    }
-                }
-            }
-            .store{
-                padding: 10px;
-                width: 20%;
-                h4{
-                    padding: 10px;
-                    color: white;
-                    text-align: center;
-                }
-                ul{
-                    li{
-                        list-style: none;
-                        padding: 10px;
-                        a{
-                            margin: 5px 65px;
-                            text-align: left;
-                            color: white;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-            .support{
-                width: 20%;
-                h4{
-                    padding: 10px;
-                    color: white;
-                    text-align: center;
-                }
-                ul{
-                    li{
-                        list-style: none;
-                        padding: 10px;
-                        a{
-                            margin: 5px 65px;
-                            text-align: left;
-                            color: white;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}  
-
-
-
-
 
 
 @media screen and (max-width:795px) {
-    header{
-        position: fixed;
-        .header1{
-            background-image: url(/img/rm373batch2-04.jpg);
-            nav{
-                ul{
-                    li{
-                        padding: 10px;
-                    }
-                    li:hover{
-                        border-radius: 10px;
-                        background-color: #06283D;
-                    }
-                    li:nth-of-type(3):hover .submenu{
-                        border-radius: 10px;
-                        padding: 10px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        align-items: center;
-                        position: absolute;
-                        background-image: url(/img/rm373batch2-04.jpg);
-                        top: 40px;
-                        right: 50px;
-                        width: 400px;
-                        li:nth-of-type(1){
-                            margin-right: 115px;
-                        }
-                        li{
-                            padding: 10px;
-                            width: 120px;
-                        }
-                    }
-                }
-            }
-            .pencarian{
-                margin: auto;
-                padding: 10px;
+    @import "_header-mobile";
+    @import "_footer-mobile";
+    main{
+        section.utama{
+            background-image: url(/img/gamepad.jpg);
+            .kiri{
+                height: 100%;
                 width: 20%;
-                text-align: center;
-                .input1{
-                    display: none;
+                margin: auto;
+            }
+            .tengah{
+                width: 60%;
+                color:#06283D;
+                article{
+                    margin: auto;
+                    margin-top: 100px;
                 }
-                button{
-                    width: 50%;
+                h1{
+                    text-align: center;
+                    font-size: 38px;
+                    margin: 0%;
+                    text-shadow: 5px 3px 5px white;
+                }
+                p{
                     border-radius: 10px;
+                    padding: 10px;
+                    color: white;
+                    background-color: rgba(06, 28, 39, 0.5);
+                    margin: auto;
+                    width: 80%;
+                    text-align: center;
+                    margin-top: 2%;
                 }
-                button:hover{
+            }
+            .kanan{
+                width: 20%;
+            }
+        }
+    
+        section.contentpopular{
+            display: flex;
+            flex-wrap: wrap;
+            .contentkiri{
+                margin-top: 30px;
+                width: 960px;       
+                .deskripsi{
+                    justify-content: center;
+                    width: 100%;
                     background-color: #06283D;
-                    cursor: pointer;
-                    .input2{
-                        display: block;
-                        position: absolute;
-                        top: 40px;
-                        height: 30px;
+                    h1{
+                        color: white;
+                        margin: 0%;
+                        text-align: center;
+                        font-size: 82px;
+                    }
+                    h4{
+                        color: white;
+                        margin: 0%;
+                        font-size: 18px;
+                        margin-left: 37%;
+                        text-align: center;
+                    }
+                }
+                article{
+                    margin-top: -15px;
+                    padding: 50px;
+                    text-align: center;
+                    p{
+                        color: #06283D;
+                        margin: auto;
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px;
+                        font-size: 24px;
+                    }
+                    button{
+                        background-color: #06283D;
+                        color: whitesmoke;
+                        font-weight: bold;
                         border-radius: 10px;
-                        border: 3px solid #06283D;
-                        background-color: white;
-                        left: 95px;
+                        border: 0px;
+                        margin-top: 30px;
+                        padding: 10px;
+                        font-size: 24px;
+                        box-shadow: 0px 5px 5px #06283D;
+                    }
+                }
+            }
+            .contentkanan{
+                width: 750px;
+                display: flex;
+                justify-content: space-between;
+                .video{
+                    margin: auto;
+                    video{
+                        width: 480px;
                     }
                 }
             }
         }
-        .header2{
-            display: none;
+    
+        section.series:disabled{
+            display: flex;
         }
-    }
-
-    section.utama{
-        background-image: url(/img/gamepad.jpg);
-        .kiri{
-            height: 100%;
-            width: 20%;
-            margin: auto;
-        }
-        .tengah{
-            width: 60%;
-            color:#06283D;
-            article{
-                margin: auto;
-                margin-top: 100px;
-            }
-            h1{
-                text-align: center;
-                font-size: 38px;
-                margin: 0%;
-                text-shadow: 5px 3px 5px white;
-            }
-            p{
-                border-radius: 10px;
-                padding: 10px;
-                color: white;
-                background-color: rgba(06, 28, 39, 0.5);
-                margin: auto;
-                width: 80%;
-                text-align: center;
-                margin-top: 2%;
-            }
-        }
-        .kanan{
-            width: 20%;
-        }
-    }
-
-    section.contentpopular{
-        display: flex;
-        flex-wrap: wrap;
-        .contentkiri{
-            margin-top: 30px;
-            width: 960px;       
-            .deskripsi{
-                justify-content: center;
-                width: 100%;
-                background-color: #06283D;
+        section.series{
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            .serieskiri{
+                border: 1px solid white;
+                background-image: url(/img/pexels-marta-branco-1194713.jpg);
+                background-attachment: fixed;
+                width: auto;
+                height: 365px;
+                background-size: cover;
                 h1{
+                    font-size: 52px;
+                    margin-top: 17%;
                     color: white;
-                    margin: 0%;
-                    text-align: center;
-                    font-size: 82px;
-                }
-                h4{
-                    color: white;
-                    margin: 0%;
-                    font-size: 18px;
-                    margin-left: 37%;
                     text-align: center;
                 }
+                
             }
-            article{
-                margin-top: -15px;
-                padding: 50px;
-                text-align: center;
-                p{
-                    color: #06283D;
-                    margin: auto;
-                    width: 100%;
-                    text-align: center;
-                    padding: 10px;
-                    font-size: 24px;
+            .serieskanan{
+                border: 1px solid white;
+                width: auto;
+                article{
+                    margin: 10px;
+                    p{
+                        font-size: 18px;
+                    }
                 }
-                button{
+                h1{
+                    border-radius: 10px;
+                    padding: 10px;
                     background-color: #06283D;
                     color: whitesmoke;
-                    font-weight: bold;
-                    border-radius: 10px;
-                    border: 0px;
-                    margin-top: 30px;
-                    padding: 10px;
-                    font-size: 24px;
-                    box-shadow: 0px 5px 5px #06283D;
+                    margin: 10px;
+                    font-size: 42px;
                 }
             }
         }
-        .contentkanan{
-            width: 750px;
+        
+        .content{
             display: flex;
-            justify-content: space-between;
-            .video{
-                margin: auto;
-                video{
-                    width: 480px;
-                }
-            }
-        }
-    }
-
-    section.series:disabled{
-        display: flex;
-    }
-    section.series{
-        border: 1px solid white;
-        display: flex;
-        flex-direction: column;
-        .serieskiri{
-            border: 1px solid white;
-            background-image: url(/img/pexels-marta-branco-1194713.jpg);
-            background-attachment: fixed;
-            width: auto;
-            height: 365px;
-            background-size: cover;
-            h1{
-                font-size: 52px;
-                margin-top: 17%;
-                color: white;
-                text-align: center;
-            }
-            
-        }
-        .serieskanan{
-            border: 1px solid white;
-            width: auto;
-            article{
-                margin: 10px;
-                p{
-                    font-size: 18px;
-                }
-            }
-            h1{
-                border-radius: 10px;
-                padding: 10px;
-                background-color: #06283D;
-                color: whitesmoke;
-                margin: 10px;
-                font-size: 42px;
-            }
-        }
-    }
-    
-    .content{
-        display: flex;
-        flex-direction: column;
-        section.content1{
-            width: auto;
-            h1{
-                text-align: left;
-                padding: 20px;
-            }
-            img{
-                width: 70%;
-            }
-            article{
-                p{
-                    margin: 20px;
-                }
-            }
-        }
-        section.content2{
-            box-shadow: 0px 0px 5px grey;
-            padding: 10px;
-            width: auto;
-            text-align: center;
-            .nametag{
-                padding: 20px;
+            flex-direction: column;
+            section.content1{
+                width: auto;
                 h1{
                     text-align: left;
+                    padding: 20px;
                 }
-                h4{
-                    text-align: left;
+                img{
+                    width: 70%;
                 }
-            }
-            img{
-                width: 70%;
-            }
-            article{
-                p{
-                    margin: 20px;
+                article{
+                    p{
+                        margin: 20px;
+                    }
                 }
             }
-        }
-        section.content3{
-            box-shadow: 0px 0px 5px grey;
-            padding: 10px;
-            width: auto;
-            text-align: center;
-            h1{
-                text-align: left;
-                padding: 20px;
-            }
-            img{
-                width: 70%;
-            }
-            article{
-                p{
-                    margin: 20px;
-                }
-            }
-        }
-    }
-
-
-    section.table{
-        border: 5px solid;
-        background-image: url(/img/rm373batch2-04.jpg);
-        background-size: 100%;
-        section.subtable{
-            background-color: 1px solid;
-            background-color: rgba(06, 28, 39, 0.5);
-            margin: 50px 50px;
-            box-shadow: 0px 0px 10px whitesmoke;
-            h1{
-                margin-top: 2%;
-                font-size: 24px;
+            section.content2{
+                box-shadow: 0px 0px 5px grey;
+                padding: 10px;
+                width: auto;
                 text-align: center;
-                padding: 10px;
-                color: whitesmoke;
-            }
-            table{
-                margin-right: auto;
-                color: whitesmoke;
-                thead{
-                    font-size: 14px;
-                    tr{
-                        th:nth-of-type(4){
-                            display: none;
-                        }
-                        th:nth-of-type(5){
-                            display: none;
-                        }
-                    }   
+                .nametag{
+                    padding: 20px;
+                    h1{
+                        text-align: left;
+                    }
+                    h4{
+                        text-align: left;
+                    }
                 }
-
-                tbody{
-                    tr{
-                        th:nth-of-type(4){
-                            display: none;
-                        }
-                        th:nth-of-type(5){
-                            display: none;
+                img{
+                    width: 70%;
+                }
+                article{
+                    p{
+                        margin: 20px;
+                    }
+                }
+            }
+            section.content3{
+                box-shadow: 0px 0px 5px grey;
+                padding: 10px;
+                width: auto;
+                text-align: center;
+                h1{
+                    text-align: left;
+                    padding: 20px;
+                }
+                img{
+                    width: 70%;
+                }
+                article{
+                    p{
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    
+    
+        section.table{
+            border: 5px solid;
+            background-image: url(/img/rm373batch2-04.jpg);
+            background-size: 100%;
+            section.subtable{
+                background-color: 1px solid;
+                background-color: rgba(06, 28, 39, 0.5);
+                margin: 50px 50px;
+                box-shadow: 0px 0px 10px whitesmoke;
+                h1{
+                    margin-top: 2%;
+                    font-size: 24px;
+                    text-align: center;
+                    padding: 10px;
+                    color: whitesmoke;
+                }
+                table{
+                    margin-right: auto;
+                    color: whitesmoke;
+                    thead{
+                        font-size: 14px;
+                        tr{
+                            th:nth-of-type(4){
+                                display: none;
+                            }
+                            th:nth-of-type(5){
+                                display: none;
+                            }
+                        }   
+                    }
+    
+                    tbody{
+                        tr{
+                            th:nth-of-type(4){
+                                display: none;
+                            }
+                            th:nth-of-type(5){
+                                display: none;
+                            }
                         }
                     }
                 }
             }
         }
     }
-
-    footer{
-        .footer{
-            section.bungkus{
-                padding: 10px;
-                height: auto;
-            }
-            .cta{
-                display: flex;
-                background-color: #06283D;
-                padding: 3px;
-                justify-content: space-between;
-                border: 1px solid;
-                .follow{
-                    width: 20%;
-                    padding: 10px;
-                    h4{
-                        color: white;
-                    }
-                    article{
-                        p{
-                            color: white;
-                            padding: 10px;
-                        }
-                    }
-                }
-                .store{
-                    padding: 10px;
-                    width: 20%;
-                    h4{
-                        padding: 10px;
-                        color: white;
-                        text-align: center;
-                    }
-                    ul{
-                        li{
-                            list-style: none;
-                            padding: 10px;
-                            a{
-                                margin: auto;
-                                text-align: left;
-                                color: white;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-                section.support{
-                    width: 20%;
-                    h4{
-                        padding: 10px;
-                        color: white;
-                        text-align: center;
-                    }
-                    ul{
-                        li{
-                            list-style: none;
-                            padding: 10px;
-                            a{
-                                text-align: left;
-                                color: white;
-                                margin: auto;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } 
 }

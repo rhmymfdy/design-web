@@ -1,158 +1,11 @@
-html{
-    scroll-behavior: smooth;
-}
- 
- body, div, span, applet, object, iframe,
-blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+@import "_header";
+@import "css-reset";
+@import "_footer";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;900&family=Poppins:wght@700&display=swap');
-
-/* Header */
-header{ 
-    top: 0%;
-    position: fixed; 
-    z-index: 2;
-    background-image: url(/img/rm373batch2-04.jpg);
-    width: 100%;
-    .header1{
-        color: white;
-        padding: 2px;
-        display: flex;
-        justify-content: space-between;
-        .logo{
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
-            color: white;
-            justify-content: center;
-
-        }
-        .pencarian{
-            margin: auto;
-            padding: 10px;
-            width: 20%;
-            .input1{
-                border-radius: 20px;
-                width: 70%;
-            }
-            button{
-                width: 20%;
-                border-radius: 10px;
-                .input2{
-                    display: none;
-                }
-                img{
-                    width: 10px;
-                }
-            }
-            button:hover{
-                background-color: #06283D;
-                cursor: pointer;
-            }
-        }
-
-        nav{
-            width: 60%;
-            padding: 2px;
-            display: flex;
-            align-items: center;
-            ul{
-                justify-content: space-around;
-                padding: 2px;
-                display: flex;
-                width: 100%;
-                li:nth-of-type(3) .submenu{
-                    display: none;
-                }
-                li:hover{
-                    background-color: #06283D;
-                    border-radius: 10px;
-                }
-                li{
-                    padding: 10px;
-                    list-style: none;
-                    a{
-                        font-family: 'Poppins', sans-serif;
-                        color: white;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
-    .header2{
-        box-shadow: 0px 0px 5px white;
-        nav{
-            width: 100%;
-            ul{
-                display: flex; 
-                padding: 2px;
-                justify-content: space-around;
-                li:hover{
-                    background-color: white;
-                    border-radius: 10px;
-                    a{
-                        color: #06283D;
-                    }
-                }
-                li{
-                    padding: 5px;
-                    list-style: none;
-                    a{
-                        font-family: 'Poppins', sans-serif;
-                        color:white;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
-}
 
 main{
     .banner{
-        margin-top: 90px;
+        margin-top: 60px;
         figure{
             position: relative;
             .windows{
@@ -242,6 +95,10 @@ main{
                     padding: 10px;
                     display: block;
                     font-size: 24px;
+                    a{
+                        color: #06283D;
+                        text-decoration: none;
+                    }
                 }
                 
             }
@@ -441,171 +298,11 @@ main{
     
 }
 
-/* Footer */
-footer{
-    .footer{
-        .bungkus{
-            padding: 50px;
-            .sosialmedia{
-                display: flex;
-                a{
-                    width: 4%;
-                    margin: auto;
-                    img{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        .cta{
-            display: flex;
-            background-color: #06283D;
-            padding: 20px;
-            justify-content: space-around;
-            .follow{
-                width: 20%;
-                padding: 10px;
-                h4{
-                    color: white;
-                    margin: 10px 12%;
-                }
-                article{
-                    p{
-                        color: white;
-                        padding: 10px;
-                        margin: 0px 10%;
-                    }
-                }
-            }
-            .store{
-                padding: 10px;
-                width: 20%;
-                h4{
-                    padding: 10px;
-                    color: white;
-                    text-align: center;
-                }
-                ul{
-                    li{
-                        list-style: none;
-                        padding: 10px;
-                        a{
-                            margin: 5px 65px;
-                            text-align: left;
-                            color: white;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-            .support{
-                width: 20%;
-                h4{
-                    padding: 10px;
-                    color: white;
-                    text-align: center;
-                }
-                ul{
-                    li{
-                        list-style: none;
-                        padding: 10px;
-                        a{
-                            margin: 5px 65px;
-                            text-align: left;
-                            color: white;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Add Media Screen
 
 @media screen and (max-width:800px) {
-    header{
-        position: fixed;
-        .header1{
-            background-image: url(/img/rm373batch2-04.jpg);
-            nav{
-                ul{
-                    li{
-                        padding: 10px;
-                    }
-                    li:hover{
-                        border-radius: 10px;
-                        background-color: #06283D;
-                    }
-                    li:nth-of-type(3):hover .submenu{
-                        border-radius: 10px;
-                        padding: 10px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        align-items: center;
-                        position: absolute;
-                        background-image: url(/img/rm373batch2-04.jpg);
-                        top: 40px;
-                        right: 50px;
-                        width: 400px;
-                        li:nth-of-type(1){
-                            margin-right: 115px;
-                        }
-                        li{
-                            padding: 10px;
-                            width: 120px;
-                        }
-                    }
-                }
-            }
-            .pencarian{
-                margin: auto;
-                padding: 10px;
-                width: 20%;
-                text-align: center;
-                .input1{
-                    display: none;
-                }
-                button{
-                    width: 50%;
-                    border-radius: 10px;
-                }
-                button:hover{
-                    background-color: #06283D;
-                    cursor: pointer;
-                    .input2{
-                        display: block;
-                        position: absolute;
-                        top: 40px;
-                        height: 30px;
-                        border-radius: 10px;
-                        border: 3px solid #06283D;
-                        background-color: white;
-                        left: 95px;
-                    }
-                }
-            }
-        }
-        .header2{
-            display: none;
-        }
-    }
-
+    @import "_header-mobile";
+    @import "_footer-mobile";
     // Banner
     main{
         .banner{
@@ -681,8 +378,6 @@ footer{
                         margin: auto;
                     }
                 }
-                button{  
-                }
                 
             }
         }
@@ -692,6 +387,8 @@ footer{
             transition: all .2s ease-in-out;
             
             img:hover{
+                transition-duration: 1s;
+
                 transform: scale(1.2);  
                 border-radius: 20px;
                 background-color: rgba($color: #06283D, $alpha: 0.1);
@@ -699,6 +396,7 @@ footer{
 
             }
             img{
+                transition-duration: 1s;
                 cursor: pointer;
                 margin: auto;
                 width: 50%;
@@ -792,76 +490,6 @@ footer{
                 }
                 a{
                     margin: 2%;  
-                }
-            }
-        }
-    }
-
-    footer{
-        .footer{
-            section.bungkus{
-                padding: 10px;
-                height: auto;
-            }
-            .cta{
-                display: flex;
-                background-color: #06283D;
-                padding: 3px;
-                justify-content: space-between;
-                border: 1px solid;
-                .follow{
-                    width: 20%;
-                    padding: 10px;
-                    h4{
-                        color: white;
-                    }
-                    article{
-                        p{
-                            color: white;
-                            padding: 10px;
-                        }
-                    }
-                }
-                .store{
-                    padding: 10px;
-                    width: 20%;
-                    h4{
-                        padding: 10px;
-                        color: white;
-                        text-align: center;
-                    }
-                    ul{
-                        li{
-                            list-style: none;
-                            padding: 10px;
-                            a{
-                                margin: auto;
-                                text-align: left;
-                                color: white;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-                section.support{
-                    width: 20%;
-                    h4{
-                        padding: 10px;
-                        color: white;
-                        text-align: center;
-                    }
-                    ul{
-                        li{
-                            list-style: none;
-                            padding: 10px;
-                            a{
-                                text-align: left;
-                                color: white;
-                                margin: auto;
-                                text-decoration: none;
-                            }
-                        }
-                    }
                 }
             }
         }

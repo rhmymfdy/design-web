@@ -1,0 +1,69 @@
+footer{
+    .footer{
+        section.bungkus{
+            padding: 10px;
+            height: auto;
+        }
+        .cta{
+            display: flex;
+            background-color: #06283D;
+            padding: 3px;
+            justify-content: space-between;
+            border: 1px solid;
+            .follow{
+                width: 20%;
+                padding: 10px;
+                h4{
+                    color: white;
+                }
+                article{
+                    p{
+                        color: white;
+                        padding: 10px;
+                    }
+                }
+            }
+            .store{
+                padding: 10px;
+                width: 20%;
+                h4{
+                    padding: 10px;
+                    color: white;
+                    text-align: center;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        padding: 10px;
+                        a{
+                            margin: auto;
+                            text-align: left;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            section.support{
+                width: 20%;
+                h4{
+                    padding: 10px;
+                    color: white;
+                    text-align: center;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        padding: 10px;
+                        a{
+                            text-align: left;
+                            color: white;
+                            margin: auto;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

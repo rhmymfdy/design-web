@@ -1,0 +1,80 @@
+   /* Footer */
+footer{
+    .footer{
+        .bungkus{
+            padding: 50px;
+            .sosialmedia{
+                display: flex;
+                a{
+                    width: 4%;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .cta{
+            display: flex;
+            background-color: #06283D;
+            padding: 20px;
+            justify-content: space-around;
+            .follow{
+                width: 20%;
+                padding: 10px;
+                h4{
+                    color: white;
+                    margin: 10px 12%;
+                }
+                article{
+                    p{
+                        color: white;
+                        padding: 10px;
+                        margin: 0px 10%;
+                    }
+                }
+            }
+            .store{
+                padding: 10px;
+                width: 20%;
+                h4{
+                    padding: 10px;
+                    color: white;
+                    text-align: center;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        padding: 10px;
+                        a{
+                            margin: 5px 65px;
+                            text-align: left;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .support{
+                width: 20%;
+                h4{
+                    padding: 10px;
+                    color: white;
+                    text-align: center;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        padding: 10px;
+                        a{
+                            margin: 5px 65px;
+                            text-align: left;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}  

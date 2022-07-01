@@ -1,0 +1,100 @@
+@import "_header";
+@import "css-reset";
+@import "_footer";
+
+main{
+    padding: 10px;
+    .our-service{
+        padding-top: 13%;
+        
+        .judul{
+            text-decoration: underline;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 46px;
+            margin: 0%;
+        }
+        h6{
+            margin: 1%;
+            font-size: 16px;
+            text-align: center;
+            
+        }
+        .service{
+            margin: 1%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+            
+            .produk{
+                width: 40%;
+                box-shadow: 0px 0px 10px grey;
+                display: block;
+                margin: 30px;
+                
+                img{
+                    cursor: pointer;
+                    display: block;
+                    align-items: center;
+                    margin: auto;
+                    transition-duration: 1s;
+                    width: 60%;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                    transition-duration: 1s; 
+                    border-radius: 10px;
+                }
+                h1{
+                    text-align: center;
+                    
+                    a{
+                        
+                        padding: 3px 25px;
+                        font-size: 24px;
+                        font-family: 'Darker Grotesque', sans-serif;
+                        text-decoration: none;
+                        color: #06283D;
+                        
+                        
+                    }
+                    a:hover{
+                        background-color: rgba($color: #06283D, $alpha: 1.0);
+                        color: white;
+                        border-radius: 10px;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width:795px) {
+    @import "_header-mobile";
+    @import "_footer-mobile";
+    main{
+        // service
+        .our-service{
+            padding-top: 70px;
+            .judul{
+                font-size: 18px;
+                margin: 0%;
+            }
+            h6{
+                margin: 1%;
+                font-size: 12px;
+            }
+            .service{
+                display: flex;
+                flex-direction: column;
+                .produk{
+                    width: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,59 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;900&family=Poppins:wght@700&display=swap");
-html {
-  scroll-behavior: smooth;
-}
-
-body, div, span, applet, object, iframe,
-blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Header */
 header {
   top: 0%;
   position: fixed;
@@ -89,11 +34,13 @@ header .header1 .pencarian {
 }
 
 header .header1 .pencarian .input1 {
+  border: none;
   border-radius: 20px;
   width: 70%;
 }
 
 header .header1 .pencarian button {
+  border: none;
   width: 20%;
   border-radius: 10px;
 }
@@ -190,8 +137,153 @@ header .header2 nav ul li a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Footer */
+footer .footer .bungkus {
+  padding: 50px;
+}
+
+footer .footer .bungkus .sosialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer .bungkus .sosialmedia a {
+  width: 4%;
+  margin: auto;
+}
+
+footer .footer .bungkus .sosialmedia a img {
+  width: 100%;
+}
+
+footer .footer .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #06283D;
+  padding: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer .cta .follow {
+  width: 20%;
+  padding: 10px;
+}
+
+footer .footer .cta .follow h4 {
+  color: white;
+  margin: 10px 12%;
+}
+
+footer .footer .cta .follow article p {
+  color: white;
+  padding: 10px;
+  margin: 0px 10%;
+}
+
+footer .footer .cta .store {
+  padding: 10px;
+  width: 20%;
+}
+
+footer .footer .cta .store h4 {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+footer .footer .cta .store ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+footer .footer .cta .store ul li a {
+  margin: 5px 65px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer .cta .support {
+  width: 20%;
+}
+
+footer .footer .cta .support h4 {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+footer .footer .cta .support ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+footer .footer .cta .support ul li a {
+  margin: 5px 65px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
 main .banner {
-  margin-top: 90px;
+  margin-top: 60px;
 }
 
 main .banner figure {
@@ -298,6 +390,11 @@ main .informasiproduk .kiri .deskripsi button {
   padding: 10px;
   display: block;
   font-size: 24px;
+}
+
+main .informasiproduk .kiri .deskripsi button a {
+  color: #06283D;
+  text-decoration: none;
 }
 
 main .informasiproduk .kanan {
@@ -511,97 +608,6 @@ main .bg img {
   width: 70%;
 }
 
-/* Footer */
-footer .footer .bungkus {
-  padding: 50px;
-}
-
-footer .footer .bungkus .sosialmedia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-footer .footer .bungkus .sosialmedia a {
-  width: 4%;
-  margin: auto;
-}
-
-footer .footer .bungkus .sosialmedia a img {
-  width: 100%;
-}
-
-footer .footer .cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #06283D;
-  padding: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-footer .footer .cta .follow {
-  width: 20%;
-  padding: 10px;
-}
-
-footer .footer .cta .follow h4 {
-  color: white;
-  margin: 10px 12%;
-}
-
-footer .footer .cta .follow article p {
-  color: white;
-  padding: 10px;
-  margin: 0px 10%;
-}
-
-footer .footer .cta .store {
-  padding: 10px;
-  width: 20%;
-}
-
-footer .footer .cta .store h4 {
-  padding: 10px;
-  color: white;
-  text-align: center;
-}
-
-footer .footer .cta .store ul li {
-  list-style: none;
-  padding: 10px;
-}
-
-footer .footer .cta .store ul li a {
-  margin: 5px 65px;
-  text-align: left;
-  color: white;
-  text-decoration: none;
-}
-
-footer .footer .cta .support {
-  width: 20%;
-}
-
-footer .footer .cta .support h4 {
-  padding: 10px;
-  color: white;
-  text-align: center;
-}
-
-footer .footer .cta .support ul li {
-  list-style: none;
-  padding: 10px;
-}
-
-footer .footer .cta .support ul li a {
-  margin: 5px 65px;
-  text-align: left;
-  color: white;
-  text-decoration: none;
-}
-
 @media screen and (max-width: 800px) {
   header {
     position: fixed;
@@ -672,6 +678,69 @@ footer .footer .cta .support ul li a {
   }
   header .header2 {
     display: none;
+  }
+  footer .footer section.bungkus {
+    padding: 10px;
+    height: auto;
+  }
+  footer .footer .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #06283D;
+    padding: 3px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid;
+  }
+  footer .footer .cta .follow {
+    width: 20%;
+    padding: 10px;
+  }
+  footer .footer .cta .follow h4 {
+    color: white;
+  }
+  footer .footer .cta .follow article p {
+    color: white;
+    padding: 10px;
+  }
+  footer .footer .cta .store {
+    padding: 10px;
+    width: 20%;
+  }
+  footer .footer .cta .store h4 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  footer .footer .cta .store ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  footer .footer .cta .store ul li a {
+    margin: auto;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+  }
+  footer .footer .cta section.support {
+    width: 20%;
+  }
+  footer .footer .cta section.support h4 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  footer .footer .cta section.support ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  footer .footer .cta section.support ul li a {
+    text-align: left;
+    color: white;
+    margin: auto;
+    text-decoration: none;
   }
   main .banner {
     margin: auto;
@@ -749,6 +818,8 @@ footer .footer .cta .support ul li a {
     transition: all .2s ease-in-out;
   }
   .informasiproduk section.kanan img:hover {
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     border-radius: 20px;
@@ -756,6 +827,8 @@ footer .footer .cta .support ul li a {
     border: none;
   }
   .informasiproduk section.kanan img {
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
     cursor: pointer;
     margin: auto;
     width: 50%;
@@ -843,69 +916,6 @@ footer .footer .cta .support ul li a {
   }
   .menucolors .pilihan-produk section.produk-colors a {
     margin: 2%;
-  }
-  footer .footer section.bungkus {
-    padding: 10px;
-    height: auto;
-  }
-  footer .footer .cta {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #06283D;
-    padding: 3px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    border: 1px solid;
-  }
-  footer .footer .cta .follow {
-    width: 20%;
-    padding: 10px;
-  }
-  footer .footer .cta .follow h4 {
-    color: white;
-  }
-  footer .footer .cta .follow article p {
-    color: white;
-    padding: 10px;
-  }
-  footer .footer .cta .store {
-    padding: 10px;
-    width: 20%;
-  }
-  footer .footer .cta .store h4 {
-    padding: 10px;
-    color: white;
-    text-align: center;
-  }
-  footer .footer .cta .store ul li {
-    list-style: none;
-    padding: 10px;
-  }
-  footer .footer .cta .store ul li a {
-    margin: auto;
-    text-align: left;
-    color: white;
-    text-decoration: none;
-  }
-  footer .footer .cta section.support {
-    width: 20%;
-  }
-  footer .footer .cta section.support h4 {
-    padding: 10px;
-    color: white;
-    text-align: center;
-  }
-  footer .footer .cta section.support ul li {
-    list-style: none;
-    padding: 10px;
-  }
-  footer .footer .cta section.support ul li a {
-    text-align: left;
-    color: white;
-    margin: auto;
-    text-decoration: none;
   }
 }
 /*# sourceMappingURL=detail_product.css.map */

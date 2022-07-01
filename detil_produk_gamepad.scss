@@ -1,0 +1,545 @@
+@import "_header";
+@import "css-reset";
+@import "_footer";
+
+
+main{
+    .banner{
+        margin-top: 60px;
+        figure{
+            position: relative;
+            .windows{
+                width: 100%;
+            }
+            .hp{
+                display: none;
+            }
+            .logo{
+                font-family: 'Poppins', sans-serif;
+                font-size: 2em;
+                position: absolute;
+                color: white;
+                top: 2%;
+               
+            }
+            .produk{
+                z-index: 1;
+                position: absolute;
+                bottom: 10%;
+                right: 1%;
+                h1{
+                    font-family: 'Poppins', sans-serif;
+                    text-align: right;
+                    font-size: 72px;  
+                    color: white;
+                }
+                h2{
+                    font-family: 'Poppins', sans-serif;
+                    text-align: right;
+                    font-size: 42px;
+                    color: white; 
+                    margin-top: -70px;
+                }
+                article{
+                    p{
+                        font-family: 'Darker Grotesque', sans-serif;
+                        text-align: right;
+                        margin-top: -30px;
+                        font-size: 16px;
+                        padding: 10px;
+                        margin-left: 60%;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    // Informasi Produk
+    .informasiproduk{
+        position: relative;
+        bottom: 125px; 
+        display: flex;
+        .kiri{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            .deskripsi{
+                height: 70%;
+                width: 100%;
+                margin: 10%;
+                margin-top: 10%;
+                h1{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 72px;
+                }
+                h6{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 24px;
+                    margin-top: -13%;
+                }
+                article{
+                    p{
+                        font-family: 'Darker Grotesque', sans-serif;
+                        text-align: center;
+                        font-size: 18px;
+                        margin-top: -7%;
+                        width: 90%;
+                        padding: 5px;
+                    }
+                }
+                button{
+                    margin: auto;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    display: block;
+                    font-size: 24px;
+                    a{
+                        color: #06283D;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+        }
+        .kanan{
+            width: 60%;
+            display: flex;
+            justify-content: end;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
+    // Video Product
+    .produkvideo{
+        background-image: url(/img/gamepad/bg.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: 50px;
+        padding: 10px;
+        .contentkiri{
+            width: 35%;
+            background-color: rgba($color: white, $alpha: 0.3);
+            border-radius: 7px;
+            box-shadow: 0px 0px 10px white;
+            .video{
+                margin: 10px;
+                video{
+                    margin: auto;
+                    
+                    width: 100%;
+                }
+            }
+        }
+        .contentkanan{
+            width: 64%;
+            display: flex;
+            align-items: center;
+            .deskripsi{
+                margin-left: 17%;
+                margin-right: 18%;
+                h1{
+                    color: black;
+                    font-size: 350%;
+                    font-family: 'Poppins', sans-serif;
+                    margin: 1%;
+                }
+                h4{
+                    margin: 1%;
+                    color: black;
+                    font-size: 230%;  
+                    font-family: 'Poppins', sans-serif;
+                }
+                article{
+                    p{
+                        color: black;
+                        margin: 1%;
+                        font-size: 140%;
+                        font-family: 'Darker Grotesque', sans-serif;
+                    }
+                    ul{
+                        padding: 10px;
+                        li{
+                            color: black;
+                            font-size: 140%;
+                            margin: 1%;
+                            font-family: 'Darker Grotesque', sans-serif;
+                            list-style: disc;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    // Menu colors
+    .menucolors{
+        h1{
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            
+            margin: 0%;
+            font-size: 42px;
+        }
+        h6{
+            font-size: 18px;
+            margin: 1%;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            
+        }
+        .pilihan-produk{
+            display: flex;
+            justify-content: space-evenly;
+            .produk-colors{
+                
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+                h1{
+                    font-size: 18px;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                    
+                }
+                h6{
+                    font-size: 16px;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                    
+                }
+                a{
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                    margin: 2%;
+                      
+                }
+            }
+        }
+    }
+
+    // Table
+    .spesifikasi{
+        padding-top: 70px;
+        table{
+            width: 80%;
+            margin: auto;
+            thead{
+                tr{
+                    th{
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 24px;
+                        padding: 30px;
+                        width: 100%;
+                        
+                    }
+                }
+            }
+            tbody{
+                padding: 10px;
+                tr{
+                    td{
+                        padding: 10px;
+                        border: 1px solid rgba($color: black, $alpha: 0.1);
+                        font-family: 'Darker Grotesque', sans-serif;
+                        font-size: 16px;
+                    }
+                }
+                tr:nth-of-type(10){
+                    td{
+                        background-color: rgba($color: grey, $alpha: 0.1);
+                    }
+                }
+                tr:nth-of-type(11){
+                    td{
+                        background-color: rgba($color: grey, $alpha: 0.1);
+                    }
+                }
+                tr:nth-of-type(12){
+                    td{
+                        background-color: rgba($color: grey, $alpha: 0.1);
+                    }
+                }
+                tr:nth-of-type(13){
+                    td{
+                        background-color: rgba($color: grey, $alpha: 0.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .our-service{
+        
+        h1{
+            padding: 50px;
+            text-decoration: underline;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 46px;
+        }
+        .service{
+            margin: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            .produk{
+                width: 20%;
+                display: block;
+                
+                img{
+                    cursor: pointer;
+                    display: block;
+                    align-items: center;
+                    margin: auto;
+                    transition-duration: 1s;
+                    width: 60%;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                    transition-duration: 1s; 
+                    border-radius: 10px;
+                }
+                h1{
+                    text-align: center;
+                    
+                    a{
+                        
+                        padding: 3px 25px;
+                        font-size: 24px;
+                        font-family: 'Darker Grotesque', sans-serif;
+                        text-decoration: none;
+                        color: #06283D;
+                        
+                        
+                    }
+                    a:hover{
+                        background-color: rgba($color: #06283D, $alpha: 1.0);
+                        color: white;
+                        border-radius: 10px;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    
+}
+
+// Add Media Screen
+
+@media screen and (max-width:800px) {
+    @import "_header-mobile";
+    @import "_footer-mobile";
+    // Banner
+    main{
+        .banner{
+            margin: auto;
+            figure{
+                .windows{
+                    display: none;
+                }
+                .hp{
+                    display: block;
+                    width: 100%;
+                }
+                .logo{
+                    display: none;
+                   
+                }
+                .produk{
+                    padding: 10px;
+                    width: 70%;
+                    bottom: 10%;
+                    right: 0%;
+                    left: 0%;
+                    border-radius: 20px;
+                    background-color:rgba($color: white, $alpha: 0.5);
+                    margin: auto;
+                    box-shadow: 0px 0px 2px grey;
+                    h1{
+                        color: #06283D;
+                        margin: auto;
+                        text-align: center;
+                    }
+                    h2{
+                       color: #06283D;
+                       margin: auto;
+                       text-align: center;
+                    }
+                    article{
+                        p{
+                            padding: 10px;
+                            margin: auto;
+                            width: 90%;
+                            text-align: center;
+                            color: #06283D;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Informasi Produk
+    .informasiproduk{
+        display: flex;
+        flex-direction: column;  
+        margin-top: 100px;
+        section.kiri{
+            margin: auto;
+            width: auto;
+            .deskripsi{
+                
+                h1{
+                    font-size: 56px;
+                    margin: 1%;
+                     
+                }
+                h6{
+                    margin: 1%;
+                    
+                }
+                article{
+                    margin-bottom: 20px;
+                    p{
+                        margin: auto;
+                    }
+                }
+                
+            }
+        }
+        section.kanan{
+            margin: auto;
+            width: auto;
+            transition: all .2s ease-in-out;
+            
+            img:hover{
+                transition-duration: 1s;
+
+                transform: scale(1.2);  
+                border-radius: 20px;
+                background-color: rgba($color: #06283D, $alpha: 0.1);
+                border: none;
+
+            }
+            img{
+                transition-duration: 1s;
+                cursor: pointer;
+                margin: auto;
+                width: 50%;
+                
+            }
+        }
+    }
+
+    // Video Product
+    section.produkvideo{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+        
+        
+        .contentkiri{
+            width: 95%;
+            background: none;
+            box-shadow: none;
+            
+            .video{
+                background-color: none;
+                padding: 30px 0px ;
+                text-align: center;
+                video{
+                    width: 90%;
+                    box-shadow: 0px 0px 10px white;
+                    
+                    
+                    
+                }
+            }
+        }
+        .contentkanan{
+            
+            width: 100%;
+            
+            
+            .deskripsi{
+                margin: auto;
+                h1{
+                    text-align: center;
+                    
+                    font-size: 250%;
+                }
+                h4{
+                    font-size: 150%;
+                    text-align: center;
+                    
+                }
+                article{
+                    p{
+                        font-size: 125%;
+                        text-align: center;
+                        
+                    }
+                    ul{
+                        padding: 10px 0px;
+                        li{
+                            
+                            font-size: 125%;
+                            margin: auto;
+                            width: 90%;
+                            
+                            
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    // Menu colors
+    .menucolors{
+        width: 100%;
+        margin: auto;
+        .pilihan-produk{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            section.produk-colors{
+                display: flex;
+                align-items: center;
+                width: 100%; 
+                img{
+                    width: 90%;
+                }
+                h1{
+                    margin-top: -19%;
+                }
+                a{
+                    margin: 2%;  
+                }
+            }
+        }
+    }
+}

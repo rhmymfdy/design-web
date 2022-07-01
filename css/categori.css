@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;900&family=Poppins:wght@700&display=swap");
+header {
+  top: 0%;
+  position: fixed;
+  z-index: 2;
+  background-image: url(/img/rm373batch2-04.jpg);
+  width: 100%;
+}
+
+header .header1 {
+  color: white;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header1 .logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header1 .pencarian {
+  margin: auto;
+  padding: 10px;
+  width: 20%;
+}
+
+header .header1 .pencarian .input1 {
+  border: none;
+  border-radius: 20px;
+  width: 70%;
+}
+
+header .header1 .pencarian button {
+  border: none;
+  width: 20%;
+  border-radius: 10px;
+}
+
+header .header1 .pencarian button .input2 {
+  display: none;
+}
+
+header .header1 .pencarian button img {
+  width: 10px;
+}
+
+header .header1 .pencarian button:hover {
+  background-color: #06283D;
+  cursor: pointer;
+}
+
+header .header1 nav {
+  width: 60%;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header1 nav ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+header .header1 nav ul li:nth-of-type(3) .submenu {
+  display: none;
+}
+
+header .header1 nav ul li:hover {
+  background-color: #06283D;
+  border-radius: 10px;
+}
+
+header .header1 nav ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+header .header1 nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+header .header2 {
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+}
+
+header .header2 nav {
+  width: 100%;
+}
+
+header .header2 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .header2 nav ul li:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+
+header .header2 nav ul li:hover a {
+  color: #06283D;
+}
+
+header .header2 nav ul li {
+  padding: 5px;
+  list-style: none;
+}
+
+header .header2 nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Footer */
+footer .footer .bungkus {
+  padding: 50px;
+}
+
+footer .footer .bungkus .sosialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer .bungkus .sosialmedia a {
+  width: 4%;
+  margin: auto;
+}
+
+footer .footer .bungkus .sosialmedia a img {
+  width: 100%;
+}
+
+footer .footer .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #06283D;
+  padding: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer .cta .follow {
+  width: 20%;
+  padding: 10px;
+}
+
+footer .footer .cta .follow h4 {
+  color: white;
+  margin: 10px 12%;
+}
+
+footer .footer .cta .follow article p {
+  color: white;
+  padding: 10px;
+  margin: 0px 10%;
+}
+
+footer .footer .cta .store {
+  padding: 10px;
+  width: 20%;
+}
+
+footer .footer .cta .store h4 {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+footer .footer .cta .store ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+footer .footer .cta .store ul li a {
+  margin: 5px 65px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer .cta .support {
+  width: 20%;
+}
+
+footer .footer .cta .support h4 {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+footer .footer .cta .support ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+footer .footer .cta .support ul li a {
+  margin: 5px 65px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 10px;
+}
+
+main .our-service {
+  padding-top: 13%;
+}
+
+main .our-service .judul {
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+  margin: 0%;
+}
+
+main .our-service h6 {
+  margin: 1%;
+  font-size: 16px;
+  text-align: center;
+}
+
+main .our-service .service {
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .our-service .service .produk {
+  width: 40%;
+  -webkit-box-shadow: 0px 0px 10px grey;
+          box-shadow: 0px 0px 10px grey;
+  display: block;
+  margin: 30px;
+}
+
+main .our-service .service .produk img {
+  cursor: pointer;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 60%;
+}
+
+main .our-service .service .produk img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  border-radius: 10px;
+}
+
+main .our-service .service .produk h1 {
+  text-align: center;
+}
+
+main .our-service .service .produk h1 a {
+  padding: 3px 25px;
+  font-size: 24px;
+  font-family: 'Darker Grotesque', sans-serif;
+  text-decoration: none;
+  color: #06283D;
+}
+
+main .our-service .service .produk h1 a:hover {
+  background-color: #06283d;
+  color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 795px) {
+  header {
+    position: fixed;
+  }
+  header .header1 {
+    background-image: url(/img/rm373batch2-04.jpg);
+  }
+  header .header1 nav ul li {
+    padding: 10px;
+  }
+  header .header1 nav ul li:hover {
+    border-radius: 10px;
+    background-color: #06283D;
+  }
+  header .header1 nav ul li:nth-of-type(3):hover .submenu {
+    border-radius: 10px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    background-image: url(/img/rm373batch2-04.jpg);
+    top: 40px;
+    right: 50px;
+    width: 400px;
+  }
+  header .header1 nav ul li:nth-of-type(3):hover .submenu li:nth-of-type(1) {
+    margin-right: 115px;
+  }
+  header .header1 nav ul li:nth-of-type(3):hover .submenu li {
+    padding: 10px;
+    width: 120px;
+  }
+  header .header1 .pencarian {
+    margin: auto;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+  }
+  header .header1 .pencarian .input1 {
+    display: none;
+  }
+  header .header1 .pencarian button {
+    width: 50%;
+    border-radius: 10px;
+  }
+  header .header1 .pencarian button:hover {
+    background-color: #06283D;
+    cursor: pointer;
+  }
+  header .header1 .pencarian button:hover .input2 {
+    display: block;
+    position: absolute;
+    top: 40px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid #06283D;
+    background-color: white;
+    left: 95px;
+  }
+  header .header2 {
+    display: none;
+  }
+  footer .footer section.bungkus {
+    padding: 10px;
+    height: auto;
+  }
+  footer .footer .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #06283D;
+    padding: 3px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid;
+  }
+  footer .footer .cta .follow {
+    width: 20%;
+    padding: 10px;
+  }
+  footer .footer .cta .follow h4 {
+    color: white;
+  }
+  footer .footer .cta .follow article p {
+    color: white;
+    padding: 10px;
+  }
+  footer .footer .cta .store {
+    padding: 10px;
+    width: 20%;
+  }
+  footer .footer .cta .store h4 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  footer .footer .cta .store ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  footer .footer .cta .store ul li a {
+    margin: auto;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+  }
+  footer .footer .cta section.support {
+    width: 20%;
+  }
+  footer .footer .cta section.support h4 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  footer .footer .cta section.support ul li {
+    list-style: none;
+    padding: 10px;
+  }
+  footer .footer .cta section.support ul li a {
+    text-align: left;
+    color: white;
+    margin: auto;
+    text-decoration: none;
+  }
+  main .our-service {
+    padding-top: 70px;
+  }
+  main .our-service .judul {
+    font-size: 18px;
+    margin: 0%;
+  }
+  main .our-service h6 {
+    margin: 1%;
+    font-size: 12px;
+  }
+  main .our-service .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .our-service .service .produk {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=categori.css.map */

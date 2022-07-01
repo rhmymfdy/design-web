@@ -1,0 +1,188 @@
+@import "css-reset";
+@import "_header";
+@import "_footer";
+body{
+    background-image: url(/img/body.jpg);
+}
+
+.bungkusutama{
+    margin: 7%;
+    margin-top: 10%;
+    box-shadow: 0px 0px 30px grey;
+
+}
+.bungkus{
+    height: 700px;
+    display: flex;
+}
+.bungkuskiri{
+    margin-top: 10%;
+    height: 100%;
+    width: 60%;
+    height: auto;
+}
+.bungkuskiri h1{
+    text-align: center;
+    font-size: 62px;
+    margin: 0%;
+    padding: 0px;
+    color: white;
+}
+.bungkuskiri p{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin: 0%;
+    padding: 10px;
+}
+.bungkuskanan{
+    box-shadow: 0px 0px 30px grey;
+    height: 100%;
+    background-image: url(/img/bg.jpg);
+    background-size: 1000px;
+    background-position: center;
+    width: 40%;
+    height: auto;
+}
+.baru{
+    margin-top: 30%;
+}
+.baru h1{
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 3%;
+    font-weight: bold;
+}
+.baru p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+}
+.signup{
+    margin-top: 5%;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+}
+.signup button{
+    background-color: white;
+    color: #E6BA71;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 42px;
+    cursor: pointer;
+}
+.signup button:hover{
+    background-color: black;
+}
+.socialnetwork{
+    text-align: center;
+    padding: 5px;
+}
+.socialnetwork img{
+    text-align: center;
+    justify-content: center;
+    width: 4%;
+}
+.bungkusinput{
+    display: flex;
+    align-items: center;
+    height: 330px;
+}
+.input{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+.email{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.email label{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin-left: 10%;
+}
+.email input{
+    height: 30px;
+    border-radius: 7px;
+    width: 70%;
+    margin-left: 10%;
+}
+.password{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.password label{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin-left: 10%;
+}
+.password input{
+    margin-left: 10%;
+    height: 30px;
+    border-radius: 7px;
+    width: 70%;
+}
+.login{
+    padding: 10px;
+    text-align: center;
+}
+.login button{
+    cursor: pointer;
+    background-color: #E6BA71;
+    color: white;
+    border-radius: 7px;
+    font-size: 32px;
+    width: 30%;
+    padding: 7px;
+    border: none;
+}
+.login button:hover{
+    background-color: black;
+}
+
+@media screen and (max-width:795px) {
+    @import "_header-mobile";
+    @import "_footer-mobile";
+    main{
+        .bungkusutama{
+            height: 1000px;
+            .bungkus{
+                margin-top: 100px;
+                display: flex;
+                flex-direction: column;
+                .bungkuskiri{
+                    margin: auto;
+                    width: auto;
+                    h1{
+                        padding: 50px;
+                    }
+                }
+                .bungkuskanan{
+                    margin: auto;
+                    width: auto;
+                    box-shadow: none;
+                    background-image: none;
+                    h1{
+                        margin-top: -100px;  
+                    }
+                    p{
+                        font-size: 14px;    
+                    }
+                }
+            }
+        }
+    }
+}
